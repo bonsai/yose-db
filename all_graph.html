@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>全講談師グラフ — yose-db</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#0b1020; --panel:#111827; --text:#e5e7eb; --muted:#9ca3af; --line:#475569; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,"Segoe UI","Noto Sans JP",sans-serif; background:var(--bg); color:var(--text); }
+    header { padding:14px 18px; border-bottom:1px solid #263247; display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
+    h1 { margin:0; font-size:20px; }
+    .sub { color:var(--muted); font-size:12px; }
+    .stats { display:flex; gap:14px; margin-left:auto; flex-wrap:wrap; }
+    .stat { min-width:70px; text-align:center; }
+    .stat b { display:block; font-size:20px; }
+    .stat span { color:var(--muted); font-size:11px; }
+    main { height:calc(100vh - 82px); position:relative; overflow:auto; }
+    svg { width:100%; min-width:1100px; height:100%; min-height:900px; display:block; }
+    .edge { stroke:var(--line); stroke-width:1; opacity:.45; }
+    .org { fill:#7c3aed; stroke:#fff; stroke-opacity:.7; stroke-width:1.5; }
+    .member { stroke:#fff; stroke-opacity:.55; stroke-width:1; cursor:pointer; }
+    .member:hover { stroke-width:2.5; stroke-opacity:1; }
+    .org-label { fill:var(--text); font-size:14px; font-weight:700; text-anchor:middle; }
+    .member-label { fill:var(--text); font-size:10px; pointer-events:none; }
+    .rank-label { fill:var(--muted); font-size:9px; pointer-events:none; }
+    .legend { position:fixed; right:16px; top:92px; background:color-mix(in srgb,var(--panel) 95%,transparent); border:1px solid #263247; border-radius:10px; padding:10px 12px; font-size:11px; line-height:1.8; }
+    .dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; }
+    .info { position:fixed; left:16px; bottom:16px; max-width:380px; background:color-mix(in srgb,var(--panel) 96%,transparent); border:1px solid #263247; border-radius:10px; padding:12px 14px; font-size:12px; display:none; z-index:5; }
+    .info strong { display:block; font-size:15px; margin-bottom:3px; }
+    .info a { color:inherit; }
+    .error { padding:30px; color:#fca5a5; }
+  </style>
+</head>
+<body>
+<header>
+  <div><h1>全講談師グラフ</h1><div class="sub">2026年版 現役講談師の所属グラフ</div></div>
+  <div id="stats" class="stats"></div>
+</header>
+<main>
+  <svg id="graph" viewBox="0 0 1600 1100" role="img" aria-label="2026年版 全講談師の所属グラフ"></svg>
+</main>
+<div class="legend">
+  <div><span class="dot" style="background:#ef4444"></span>真打</div>
+  <div><span class="dot" style="background:#3b82f6"></span>二ツ目</div>
+  <div><span class="dot" style="background:#22c55e"></span>前座</div>
+  <div><span class="dot" style="background:#64748b"></span>階級未記載</div>
+</div>
+<div id="info" class="info"></div>
+<script>
+const rankColor = { "真打":"#ef4444", "二ツ目":"#3b82f6", "前座":"#22c55e" };
+const svg = document.querySelector('#graph');
+const statsEl = document.querySelector('#stats');
+const info = document.querySelector('#info');
+const NS = 'http://www.w3.org/2000/svg';
+const esc = value => String(value ?? '').replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));
+
+function text(x, y, value, cls) {
+  const t = document.createElementNS(NS, 'text');
+  t.setAttribute('x', x); t.setAttribute('y', y); t.setAttribute('class', cls); t.textContent = value;
+  return t;
+}
+
+function showInfo(member) {
+  info.style.display = 'block';
+  const url = member.url ? `<br><a href="${esc(member.url)}" target="_blank" rel="noopener">プロフィール</a>` : '';
+  info.innerHTML = `<strong>${esc(member.name)}</strong>${esc(member.organization)} / ${esc(member.rank || '階級未記載')}${url}`;
+}
+
+async function load() {
+  try {
+    const response = await fetch('./data/all_graph.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    const stats = data.stats || {};
+    statsEl.innerHTML = [
+      ['講談師', stats.kodanshi],
+      ['団体', stats.organizations],
+      ['真打', stats.shinuchi],
+      ['二ツ目', stats.futatsume],
+      ['前座', stats.zenza]
+    ].map(([label, value]) => `<div class="stat"><b>${value ?? 0}</b><span>${label}</span></div>`).join('');
+
+    const groups = data.groups || [];
+    const cols = Math.max(groups.length, 1);
+    const colW = 1500 / cols;
+    const top = 90;
+    const memberStart = 150;
+    const rowH = 22;
+    const nodeR = 7;
+    const edgeLayer = document.createElementNS(NS, 'g');
+    const nodeLayer = document.createElementNS(NS, 'g');
+    svg.append(edgeLayer, nodeLayer);
+
+    groups.forEach((group, gi) => {
+      const cx = 50 + gi * colW + colW / 2;
+      const members = group.members || [];
+      const org = document.createElementNS(NS, 'circle');
+      org.setAttribute('cx', cx); org.setAttribute('cy', top); org.setAttribute('r', 30); org.setAttribute('class', 'org');
+      nodeLayer.append(org);
+      nodeLayer.append(text(cx, top + 52, group.name, 'org-label'));
+
+      members.forEach((member, mi) => {
+        const y = memberStart + mi * rowH;
+        const edge = document.createElementNS(NS, 'line');
+        edge.setAttribute('x1', cx); edge.setAttribute('y1', top + 30); edge.setAttribute('x2', cx); edge.setAttribute('y2', y);
+        edge.setAttribute('class', 'edge'); edgeLayer.append(edge);
+
+        const circle = document.createElementNS(NS, 'circle');
+        circle.setAttribute('cx', cx); circle.setAttribute('cy', y); circle.setAttribute('r', nodeR);
+        circle.setAttribute('fill', rankColor[member.rank] || '#64748b');
+        circle.setAttribute('class', 'member');
+        circle.addEventListener('click', () => showInfo({ ...member, organization: group.name }));
+        nodeLayer.append(circle);
+
+        const label = document.createElementNS(NS, 'text');
+        label.setAttribute('x', cx + 13); label.setAttribute('y', y + 3); label.setAttribute('class', 'member-label');
+        label.textContent = member.name;
+        label.addEventListener('click', () => showInfo({ ...member, organization: group.name }));
+        nodeLayer.append(label);
+      });
+    });
+  } catch (error) {
+    document.querySelector('main').innerHTML = `<div class="error">読込失敗: ${esc(error.message)}<br><small>data/all_graph.json が Pages artifact に含まれているか確認してください。</small></div>`;
+  }
+}
+load();
+</script>
+</body>
+</html>
