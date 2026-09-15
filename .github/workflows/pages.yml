@@ -4,7 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - 'graph.html'
+      - 'all_graph.html'
+      - 'bin/generate_all_graph'
+      - 'db/seeds/kodanshi_2026.yml'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -26,8 +28,10 @@ jobs:
 
       - name: Prepare static FE
         run: |
-          mkdir -p _site
-          cp graph.html _site/index.html
+          mkdir -p _site/data
+          ruby bin/generate_all_graph
+          cp all_graph.html _site/index.html
+          cp data/all_graph.json _site/data/all_graph.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
