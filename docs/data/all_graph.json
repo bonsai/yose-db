@@ -1,0 +1,1792 @@
+{
+  "meta": {
+    "title": "全講談師グラフ",
+    "source": {
+      "title": "現役講談師 一覧 2026年版｜全5団体・119名の講談師",
+      "url": "https://wagei.deci.jp/wordpress/geneki-kodanshi-list-2026/"
+    },
+    "genre": "講談",
+    "build_at": "2026-09-15T05:30:44Z",
+    "member_count": 123,
+    "organization_count": 6
+  },
+  "ranks": {
+    "真打": 51,
+    "二ツ目": 17,
+    "前座": 10
+  },
+  "nodes": [
+    {
+      "id": "org-ck50c2b3fe",
+      "type": "organization",
+      "name": "講談協会",
+      "genre": "講談",
+      "member_count": 50,
+      "url": "https://kodankyokai.jp/"
+    },
+    {
+      "id": "org-ckb3ab1c67",
+      "type": "organization",
+      "name": "日本講談協会",
+      "genre": "講談",
+      "member_count": 28,
+      "url": "https://www.n-kodan.com/"
+    },
+    {
+      "id": "org-cke005af57",
+      "type": "organization",
+      "name": "上方講談協会",
+      "genre": "講談",
+      "member_count": 21,
+      "url": "https://www.kamigata-kodan.jp/"
+    },
+    {
+      "id": "org-cke114b7a4",
+      "type": "organization",
+      "name": "大阪講談協会",
+      "genre": "講談",
+      "member_count": 13,
+      "url": "https://www.osaka-kodankyoukai.com/"
+    },
+    {
+      "id": "org-ck355f25ea",
+      "type": "organization",
+      "name": "なみはや講談協会",
+      "genre": "講談",
+      "member_count": 7,
+      "url": "https://namihaya-kodan.com/"
+    },
+    {
+      "id": "org-ckeaa563ca",
+      "type": "organization",
+      "name": "無所属",
+      "genre": "講談",
+      "member_count": 4,
+      "url": null
+    },
+    {
+      "id": "member-a75e50e57e",
+      "type": "member",
+      "name": "宝井琴梅",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kinbai/"
+    },
+    {
+      "id": "member-e503f9879f",
+      "type": "member",
+      "name": "宝井琴桜",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kino/"
+    },
+    {
+      "id": "member-34ac250cf2",
+      "type": "member",
+      "name": "一龍齋貞花",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teika/"
+    },
+    {
+      "id": "member-7b10a0b5a5",
+      "type": "member",
+      "name": "一龍齋貞心",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teisin/"
+    },
+    {
+      "id": "member-f4215822a2",
+      "type": "member",
+      "name": "宝井琴柳",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kinryu/"
+    },
+    {
+      "id": "member-83d057e074",
+      "type": "member",
+      "name": "宝井琴星",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kinsei/"
+    },
+    {
+      "id": "member-acba163dac",
+      "type": "member",
+      "name": "宝井琴調",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kincho/"
+    },
+    {
+      "id": "member-1d8e1fa2f0",
+      "type": "member",
+      "name": "桃川鶴女",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/momokawa-tsurujo/"
+    },
+    {
+      "id": "member-694c8f5126",
+      "type": "member",
+      "name": "田辺南北",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-nanboku/"
+    },
+    {
+      "id": "member-fac8f11bad",
+      "type": "member",
+      "name": "宝井琴嶺",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kinrei/"
+    },
+    {
+      "id": "member-aafed2ce3d",
+      "type": "member",
+      "name": "神田すみれ",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-sumire/"
+    },
+    {
+      "id": "member-41dd82a26b",
+      "type": "member",
+      "name": "神田香織",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-kaori/"
+    },
+    {
+      "id": "member-0f045b10d5",
+      "type": "member",
+      "name": "田辺鶴英",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-kakuei/"
+    },
+    {
+      "id": "member-fb7b857965",
+      "type": "member",
+      "name": "一龍齋春水",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-harumi/"
+    },
+    {
+      "id": "member-affe1b71c2",
+      "type": "member",
+      "name": "一龍齋貞友",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teiyu/"
+    },
+    {
+      "id": "member-2262eca38d",
+      "type": "member",
+      "name": "田辺一邑",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-ichiyu/"
+    },
+    {
+      "id": "member-c9d3f401f5",
+      "type": "member",
+      "name": "宝井梅福",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-umefuku/"
+    },
+    {
+      "id": "member-28c417a827",
+      "type": "member",
+      "name": "神田織音",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-orine/"
+    },
+    {
+      "id": "member-c230e762c7",
+      "type": "member",
+      "name": "田辺凌鶴",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-ryokaku/"
+    },
+    {
+      "id": "member-3ed2c3f32d",
+      "type": "member",
+      "name": "一龍齋貞橘",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teikitsu/"
+    },
+    {
+      "id": "member-1480d8dbc3",
+      "type": "member",
+      "name": "宝井一凜",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-ichirin/"
+    },
+    {
+      "id": "member-9242b7a808",
+      "type": "member",
+      "name": "田ノ中星之助",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanonaka-hoshinosuke/"
+    },
+    {
+      "id": "member-02956922a7",
+      "type": "member",
+      "name": "神田春陽",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-shunyo/"
+    },
+    {
+      "id": "member-d2fc5bfe13",
+      "type": "member",
+      "name": "田辺鶴遊",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-kakuyu/"
+    },
+    {
+      "id": "member-4d2abb5ce5",
+      "type": "member",
+      "name": "神田あおい",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-aoi/"
+    },
+    {
+      "id": "member-27e900df4c",
+      "type": "member",
+      "name": "一龍齋貞寿",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teiju/"
+    },
+    {
+      "id": "member-fbd113ff6a",
+      "type": "member",
+      "name": "神田山緑",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-sanryoku/"
+    },
+    {
+      "id": "member-c05cd80d69",
+      "type": "member",
+      "name": "田辺一乃",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-kazuno/"
+    },
+    {
+      "id": "member-c7006f19ad",
+      "type": "member",
+      "name": "宝井琴鶴",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kinkaku/"
+    },
+    {
+      "id": "member-c53d4a322d",
+      "type": "member",
+      "name": "神田董花",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-sumika/"
+    },
+    {
+      "id": "member-c5e33a4d4e",
+      "type": "member",
+      "name": "田辺銀冶",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-ginya/"
+    },
+    {
+      "id": "member-19d3b31191",
+      "type": "member",
+      "name": "一龍齋貞弥",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teiya/"
+    },
+    {
+      "id": "member-ea479a10ee",
+      "type": "member",
+      "name": "一龍齋貞鏡",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teikyo/"
+    },
+    {
+      "id": "member-21e94ae062",
+      "type": "member",
+      "name": "宝井琴凌",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-umeyu/"
+    },
+    {
+      "id": "member-c56cfb7837",
+      "type": "member",
+      "name": "神田こなぎ",
+      "rank": "真打",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-konagi/"
+    },
+    {
+      "id": "member-c5b13298dc",
+      "type": "member",
+      "name": "田辺いちか",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-ichika/"
+    },
+    {
+      "id": "member-5496db8857",
+      "type": "member",
+      "name": "田辺凌天",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-ryoten/"
+    },
+    {
+      "id": "member-70ad7f9f50",
+      "type": "member",
+      "name": "一龍斎貞奈",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teina/"
+    },
+    {
+      "id": "member-26c9930df9",
+      "type": "member",
+      "name": "神田伊織",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-iori/"
+    },
+    {
+      "id": "member-baed8decab",
+      "type": "member",
+      "name": "田辺一記",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-kazuki/"
+    },
+    {
+      "id": "member-1f6901cf43",
+      "type": "member",
+      "name": "一龍斎貞司",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/ichiryusai-teiji/"
+    },
+    {
+      "id": "member-32cf52a3f0",
+      "type": "member",
+      "name": "宝井小琴",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kokin/"
+    },
+    {
+      "id": "member-89475f54c2",
+      "type": "member",
+      "name": "神田おりびあ",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-oribia/"
+    },
+    {
+      "id": "member-fbeac5fc60",
+      "type": "member",
+      "name": "宝井優星",
+      "rank": "二ツ目",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-yuusei/"
+    },
+    {
+      "id": "member-a85ce1f0bb",
+      "type": "member",
+      "name": "神田ようかん",
+      "rank": "前座",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-youkan/"
+    },
+    {
+      "id": "member-9484deec37",
+      "type": "member",
+      "name": "神田蓮陽",
+      "rank": "前座",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-renyou/"
+    },
+    {
+      "id": "member-26b68d4546",
+      "type": "member",
+      "name": "田辺凌々",
+      "rank": "前座",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/tanabe-ryouryou/"
+    },
+    {
+      "id": "member-13bab287bb",
+      "type": "member",
+      "name": "宝井琴人",
+      "rank": "前座",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/takarai-kinto/"
+    },
+    {
+      "id": "member-9428fc0aff",
+      "type": "member",
+      "name": "一龍斎貞昌",
+      "rank": "前座",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/itiryuusai-teishou/"
+    },
+    {
+      "id": "member-45272ec0ee",
+      "type": "member",
+      "name": "神田山兎",
+      "rank": "前座",
+      "organization": "講談協会",
+      "profile_url": "https://kodankyokai.jp/kanda-santo/"
+    },
+    {
+      "id": "member-7cd3f2dba4",
+      "type": "member",
+      "name": "神田松鯉",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/shouri/"
+    },
+    {
+      "id": "member-cf625e9a57",
+      "type": "member",
+      "name": "神田愛山",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/aizan/"
+    },
+    {
+      "id": "member-8b3c2d2e9f",
+      "type": "member",
+      "name": "神田陽子",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/yoko/"
+    },
+    {
+      "id": "member-9bd0a45d22",
+      "type": "member",
+      "name": "神田紫",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/murasaki/"
+    },
+    {
+      "id": "member-4a08608e93",
+      "type": "member",
+      "name": "神田紅",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/kurenai/"
+    },
+    {
+      "id": "member-7d6c9c9248",
+      "type": "member",
+      "name": "神田茜",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/akane/"
+    },
+    {
+      "id": "member-890a7ba022",
+      "type": "member",
+      "name": "神田昌味",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/masami/"
+    },
+    {
+      "id": "member-7f7f9cc929",
+      "type": "member",
+      "name": "神田山陽",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/sanyou/"
+    },
+    {
+      "id": "member-575836eddc",
+      "type": "member",
+      "name": "神田鯉風",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/rifu/"
+    },
+    {
+      "id": "member-515ec30218",
+      "type": "member",
+      "name": "神田山吹",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/yamabuki/"
+    },
+    {
+      "id": "member-46f288047f",
+      "type": "member",
+      "name": "神田阿久鯉",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/aguri/"
+    },
+    {
+      "id": "member-fe2faf304d",
+      "type": "member",
+      "name": "神田京子",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/kyoko/"
+    },
+    {
+      "id": "member-d64ac71f7b",
+      "type": "member",
+      "name": "神田鯉栄",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/riei/"
+    },
+    {
+      "id": "member-75c5a4092c",
+      "type": "member",
+      "name": "神田蘭",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/ran/"
+    },
+    {
+      "id": "member-cc78aac539",
+      "type": "member",
+      "name": "神田伯山",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/hakuzan/"
+    },
+    {
+      "id": "member-477b1ba545",
+      "type": "member",
+      "name": "松林伯知",
+      "rank": "真打",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/hakuchi/"
+    },
+    {
+      "id": "member-b51ac7ad57",
+      "type": "member",
+      "name": "神田紅佳",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/benika/"
+    },
+    {
+      "id": "member-3efa343066",
+      "type": "member",
+      "name": "神田紅純",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/koujyun/"
+    },
+    {
+      "id": "member-d6e8780a8d",
+      "type": "member",
+      "name": "神田桜子",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/sakurako/"
+    },
+    {
+      "id": "member-482cfcf8b2",
+      "type": "member",
+      "name": "神田松麻呂",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/matsumaro/"
+    },
+    {
+      "id": "member-ebcadd58c9",
+      "type": "member",
+      "name": "神田陽乃丸",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/hinomaru/"
+    },
+    {
+      "id": "member-79454ece3f",
+      "type": "member",
+      "name": "神田鯉花",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/rika/"
+    },
+    {
+      "id": "member-52de1594a7",
+      "type": "member",
+      "name": "神田紅希",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/kouki/"
+    },
+    {
+      "id": "member-df6afdecfd",
+      "type": "member",
+      "name": "神田梅之丞",
+      "rank": "二ツ目",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/ume/"
+    },
+    {
+      "id": "member-960aaf6b67",
+      "type": "member",
+      "name": "神田青之丞",
+      "rank": "前座",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/ao/"
+    },
+    {
+      "id": "member-e93ac39df4",
+      "type": "member",
+      "name": "神田若之丞",
+      "rank": "前座",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/waka/"
+    },
+    {
+      "id": "member-1e8236ff13",
+      "type": "member",
+      "name": "神田松樹",
+      "rank": "前座",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/matsuki/"
+    },
+    {
+      "id": "member-8aadce9701",
+      "type": "member",
+      "name": "神田紫天",
+      "rank": "前座",
+      "organization": "日本講談協会",
+      "profile_url": "https://www.n-kodan.com/member/shiten/"
+    },
+    {
+      "id": "member-503fc0bdc7",
+      "type": "member",
+      "name": "旭堂南左衛門",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanzaemon"
+    },
+    {
+      "id": "member-74b2b72b4b",
+      "type": "member",
+      "name": "旭堂南舟",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nansyu"
+    },
+    {
+      "id": "member-f33286d6bf",
+      "type": "member",
+      "name": "旭堂南斗",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanto"
+    },
+    {
+      "id": "member-a2c93fc2b5",
+      "type": "member",
+      "name": "旭堂南鷹",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nano"
+    },
+    {
+      "id": "member-553bb33aef",
+      "type": "member",
+      "name": "旭堂南歌",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanka"
+    },
+    {
+      "id": "member-19f2703ac3",
+      "type": "member",
+      "name": "旭堂南亰",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nankyo"
+    },
+    {
+      "id": "member-b94e00a73d",
+      "type": "member",
+      "name": "旭堂南文字",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/namonji"
+    },
+    {
+      "id": "member-ca7cc8cbdd",
+      "type": "member",
+      "name": "旭堂南扇",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nansen"
+    },
+    {
+      "id": "member-34dbd88d35",
+      "type": "member",
+      "name": "旭堂南門",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/namon"
+    },
+    {
+      "id": "member-d5601c0d39",
+      "type": "member",
+      "name": "旭堂南山",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanzan"
+    },
+    {
+      "id": "member-42d051ca06",
+      "type": "member",
+      "name": "旭堂南之助",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nannosuke"
+    },
+    {
+      "id": "member-e753f7b96b",
+      "type": "member",
+      "name": "旭堂南生",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanshou"
+    },
+    {
+      "id": "member-d8878a83b3",
+      "type": "member",
+      "name": "旭堂南月",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nangetsu"
+    },
+    {
+      "id": "member-d65f484d5e",
+      "type": "member",
+      "name": "旭堂南楽",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanraku"
+    },
+    {
+      "id": "member-ded34a662e",
+      "type": "member",
+      "name": "旭堂南雲",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nagumo"
+    },
+    {
+      "id": "member-d3b783790a",
+      "type": "member",
+      "name": "旭堂南歩",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanpo"
+    },
+    {
+      "id": "member-3908448cf7",
+      "type": "member",
+      "name": "旭堂南丸",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://kamigata-kodan.jp/index.php/member/nanpo"
+    },
+    {
+      "id": "member-c083473384",
+      "type": "member",
+      "name": "旭堂南不二",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://www.kamigata-kodan.jp/index.php/member/minamihuji"
+    },
+    {
+      "id": "member-503c504783",
+      "type": "member",
+      "name": "旭堂南星",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://www.kamigata-kodan.jp/index.php/member/nansei"
+    },
+    {
+      "id": "member-d682961e96",
+      "type": "member",
+      "name": "旭堂南隼",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://www.kamigata-kodan.jp/index.php/member/nanshun"
+    },
+    {
+      "id": "member-4e5125f0d9",
+      "type": "member",
+      "name": "旭堂南士",
+      "rank": null,
+      "organization": "上方講談協会",
+      "profile_url": "https://www.kamigata-kodan.jp/index.php/member/nanshi"
+    },
+    {
+      "id": "member-8fb18a6d9c",
+      "type": "member",
+      "name": "旭堂南慶",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nankei"
+    },
+    {
+      "id": "member-a0460cf240",
+      "type": "member",
+      "name": "旭堂みなみ",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#minami"
+    },
+    {
+      "id": "member-a7e6a94dcb",
+      "type": "member",
+      "name": "旭堂南照",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanshou"
+    },
+    {
+      "id": "member-1817b41a2b",
+      "type": "member",
+      "name": "旭堂南桜",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanou"
+    },
+    {
+      "id": "member-c98bc5a081",
+      "type": "member",
+      "name": "旭堂南鈴",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanrei"
+    },
+    {
+      "id": "member-9534ecdbb4",
+      "type": "member",
+      "name": "旭堂南遊",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanyu"
+    },
+    {
+      "id": "member-f01e64dce8",
+      "type": "member",
+      "name": "旭堂南明",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanmei"
+    },
+    {
+      "id": "member-69fee39528",
+      "type": "member",
+      "name": "旭堂南風",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanpu"
+    },
+    {
+      "id": "member-0334cad680",
+      "type": "member",
+      "name": "旭堂南璃",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanri"
+    },
+    {
+      "id": "member-d48290585c",
+      "type": "member",
+      "name": "旭堂南和",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanwa"
+    },
+    {
+      "id": "member-71c79b784b",
+      "type": "member",
+      "name": "旭堂みふく",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/#mifuku"
+    },
+    {
+      "id": "member-1bbf8d01cb",
+      "type": "member",
+      "name": "旭堂南千王",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/"
+    },
+    {
+      "id": "member-ce4ee1a63b",
+      "type": "member",
+      "name": "旭堂南高梅",
+      "rank": null,
+      "organization": "大阪講談協会",
+      "profile_url": "https://www.osaka-kodankyoukai.com/南陵一門/"
+    },
+    {
+      "id": "member-50b32fe648",
+      "type": "member",
+      "name": "旭堂南鱗",
+      "rank": null,
+      "organization": "なみはや講談協会",
+      "profile_url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+    },
+    {
+      "id": "member-dc5396a917",
+      "type": "member",
+      "name": "旭堂南華",
+      "rank": null,
+      "organization": "なみはや講談協会",
+      "profile_url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+    },
+    {
+      "id": "member-96eee8f2d9",
+      "type": "member",
+      "name": "旭堂南海",
+      "rank": null,
+      "organization": "なみはや講談協会",
+      "profile_url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+    },
+    {
+      "id": "member-99dc58dd17",
+      "type": "member",
+      "name": "旭堂南湖",
+      "rank": null,
+      "organization": "なみはや講談協会",
+      "profile_url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+    },
+    {
+      "id": "member-a94bd1a367",
+      "type": "member",
+      "name": "旭堂鱗林",
+      "rank": null,
+      "organization": "なみはや講談協会",
+      "profile_url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+    },
+    {
+      "id": "member-22f7712b01",
+      "type": "member",
+      "name": "旭堂一海",
+      "rank": null,
+      "organization": "なみはや講談協会",
+      "profile_url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+    },
+    {
+      "id": "member-1129f4291c",
+      "type": "member",
+      "name": "旭堂左燕",
+      "rank": null,
+      "organization": "なみはや講談協会",
+      "profile_url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+    },
+    {
+      "id": "member-6f91a51989",
+      "type": "member",
+      "name": "悟道軒圓玉",
+      "rank": null,
+      "organization": "無所属",
+      "profile_url": "https://ja.wikipedia.org/wiki/悟道軒圓玉"
+    },
+    {
+      "id": "member-ff862a6407",
+      "type": "member",
+      "name": "神田昇龍",
+      "rank": null,
+      "organization": "無所属",
+      "profile_url": "https://ja.wikipedia.org/wiki/神田昇龍"
+    },
+    {
+      "id": "member-caf17e8d80",
+      "type": "member",
+      "name": "日向ひまわり",
+      "rank": null,
+      "organization": "無所属",
+      "profile_url": "https://ja.wikipedia.org/wiki/日向ひまわり"
+    },
+    {
+      "id": "member-24c2fe22c8",
+      "type": "member",
+      "name": "玉田玉秀斎",
+      "rank": null,
+      "organization": "無所属",
+      "profile_url": "https://ja.wikipedia.org/wiki/玉田玉秀斎"
+    }
+  ],
+  "edges": [
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-a75e50e57e",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-e503f9879f",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-34ac250cf2",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-7b10a0b5a5",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-f4215822a2",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-83d057e074",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-acba163dac",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-1d8e1fa2f0",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-694c8f5126",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-fac8f11bad",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-aafed2ce3d",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-41dd82a26b",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-0f045b10d5",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-fb7b857965",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-affe1b71c2",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-2262eca38d",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c9d3f401f5",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-28c417a827",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c230e762c7",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-3ed2c3f32d",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-1480d8dbc3",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-9242b7a808",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-02956922a7",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-d2fc5bfe13",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-4d2abb5ce5",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-27e900df4c",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-fbd113ff6a",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c05cd80d69",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c7006f19ad",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c53d4a322d",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c5e33a4d4e",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-19d3b31191",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-ea479a10ee",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-21e94ae062",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c56cfb7837",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-c5b13298dc",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-5496db8857",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-70ad7f9f50",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-26c9930df9",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-baed8decab",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-1f6901cf43",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-32cf52a3f0",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-89475f54c2",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-fbeac5fc60",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-a85ce1f0bb",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-9484deec37",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-26b68d4546",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-13bab287bb",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-9428fc0aff",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ck50c2b3fe",
+      "target": "member-45272ec0ee",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-7cd3f2dba4",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-cf625e9a57",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-8b3c2d2e9f",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-9bd0a45d22",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-4a08608e93",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-7d6c9c9248",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-890a7ba022",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-7f7f9cc929",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-575836eddc",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-515ec30218",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-46f288047f",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-fe2faf304d",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-d64ac71f7b",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-75c5a4092c",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-cc78aac539",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-477b1ba545",
+      "type": "belongs_to",
+      "rank": "真打"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-b51ac7ad57",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-3efa343066",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-d6e8780a8d",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-482cfcf8b2",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-ebcadd58c9",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-79454ece3f",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-52de1594a7",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-df6afdecfd",
+      "type": "belongs_to",
+      "rank": "二ツ目"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-960aaf6b67",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-e93ac39df4",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-1e8236ff13",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-ckb3ab1c67",
+      "target": "member-8aadce9701",
+      "type": "belongs_to",
+      "rank": "前座"
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-503fc0bdc7",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-74b2b72b4b",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-f33286d6bf",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-a2c93fc2b5",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-553bb33aef",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-19f2703ac3",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-b94e00a73d",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-ca7cc8cbdd",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-34dbd88d35",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-d5601c0d39",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-42d051ca06",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-e753f7b96b",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-d8878a83b3",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-d65f484d5e",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-ded34a662e",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-d3b783790a",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-3908448cf7",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-c083473384",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-503c504783",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-d682961e96",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke005af57",
+      "target": "member-4e5125f0d9",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-8fb18a6d9c",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-a0460cf240",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-a7e6a94dcb",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-1817b41a2b",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-c98bc5a081",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-9534ecdbb4",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-f01e64dce8",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-69fee39528",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-0334cad680",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-d48290585c",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-71c79b784b",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-1bbf8d01cb",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-cke114b7a4",
+      "target": "member-ce4ee1a63b",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ck355f25ea",
+      "target": "member-50b32fe648",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ck355f25ea",
+      "target": "member-dc5396a917",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ck355f25ea",
+      "target": "member-96eee8f2d9",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ck355f25ea",
+      "target": "member-99dc58dd17",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ck355f25ea",
+      "target": "member-a94bd1a367",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ck355f25ea",
+      "target": "member-22f7712b01",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ck355f25ea",
+      "target": "member-1129f4291c",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ckeaa563ca",
+      "target": "member-6f91a51989",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ckeaa563ca",
+      "target": "member-ff862a6407",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ckeaa563ca",
+      "target": "member-caf17e8d80",
+      "type": "belongs_to",
+      "rank": null
+    },
+    {
+      "source": "org-ckeaa563ca",
+      "target": "member-24c2fe22c8",
+      "type": "belongs_to",
+      "rank": null
+    }
+  ]
+}

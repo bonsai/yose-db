@@ -1,0 +1,61 @@
+name: Deploy to Cloud Run (GCP)
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_id:
+        description: GCP project ID
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: deploy-gcp
+  cancel-in-progress: true
+
+env:
+  REGION: ${{ vars.GCP_REGION || 'asia-northeast1' }}
+  REGISTRY: ${{ vars.GCP_REGISTRY || 'gcr.io' }}
+  SERVICE: ${{ vars.CLOUD_RUN_SERVICE || 'yose-db' }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Authenticate via Workload Identity Federation
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WIF_PROVIDER }}
+          service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+
+      - name: Set up gcloud
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ inputs.project_id }}
+
+      - name: Build image (Cloud Build)
+        run: |
+          gcloud builds submit \
+            --project="${{ inputs.project_id }}" \
+            --tag="${{ env.REGISTRY }}/${{ inputs.project_id }}/${{ env.SERVICE }}:latest" \
+            .
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy "${{ env.SERVICE }}" \
+            --project="${{ inputs.project_id }}" \
+            --region="${{ env.REGION }}" \
+            --image="${{ env.REGISTRY }}/${{ inputs.project_id }}/${{ env.SERVICE }}:latest" \
+            --allow-unauthenticated \
+            --add-cloudsql-instances="${{ secrets.CLOUD_SQL_INSTANCE }}" \
+            --set-env-vars="DATABASE_URL=${{ secrets.CLOUD_SQL_URL }},SECRET_KEY_BASE=${{ secrets.RAILS_SECRET_KEY_BASE }},CINII_APPID=${{ secrets.CINII_APPID }}" \
+            --set-cloudsql-instances="${{ secrets.CLOUD_SQL_INSTANCE }}"
+
+      - name: Show URL
+        run: gcloud run services describe "${{ env.SERVICE }}" --project="${{ inputs.project_id }}" --region="${{ env.REGION }}" --format='value(status.url)'

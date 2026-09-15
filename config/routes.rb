@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       resources :kodanshi, only: %i[index show] do
         collection do
           post :sync
+          get :all_graph
+          get :zenza
         end
       end
     end

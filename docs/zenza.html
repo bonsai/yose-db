@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>前座ランキング - yose-db</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#6b6259; --line:#e6ddd2; --bg:#faf7f2; --card:#fff; --accent:#b3411f; --k3:#2e6b50; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Hiragino Kaku Gothic ProN", Meiryo, sans-serif; color:var(--ink); background:var(--bg); }
+  header { background:linear-gradient(135deg,#2c1a12,#4a2c1c); color:#f5ead8; padding:22px 24px; }
+  header h1 { margin:0; font-size:22px; }
+  header p { margin:6px 0 0; font-size:13px; color:#cdb99e; }
+  header a { color:#e8c98a; }
+  main { max-width:720px; margin:0 auto; padding:20px 16px 50px; }
+  .basis { color:var(--muted); font-size:12px; margin-bottom:14px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); box-shadow:0 1px 3px rgba(0,0,0,.08); }
+  th, td { padding:10px 12px; border-bottom:1px solid var(--line); text-align:left; font-size:14px; }
+  th { background:#efe6d8; text-align:left; }
+  td.num, th.num { text-align:right; }
+  .rank { font-weight:bold; color:var(--accent); font-size:16px; }
+  .org { color:var(--muted); font-size:12px; }
+  .score { font-weight:bold; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:12px; text-align:center; padding:18px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>前座ランキング</h1>
+  <p>講談師DB — 前座に特化。データ: <a href="./data/zenza.json">data/zenza.json</a>(静的API)｜<a href="./index.html">全講談師グラフへ</a></p>
+</header>
+<main>
+  <p class="basis" id="basis"></p>
+  <table>
+    <thead><tr><th>#</th><th>名前</th><th>所属</th><th class="num">Score</th><th>Profile</th></tr></thead>
+    <tbody id="body"></tbody>
+  </table>
+</main>
+<footer>source: wagei.deci.jp 現役講談師一覧2026年版 / kodankyokai.jp profile</footer>
+<script>
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+(async () => {
+  const res = await fetch('./data/zenza.json');
+  const z = await res.json();
+  document.getElementById('basis').textContent = `${z.meta.title} (${z.meta.count}人) — ${z.meta.basis}`;
+  document.getElementById('body').innerHTML = z.members.map(m => `
+    <tr>
+      <td class="rank">${m.rank_order}</td>
+      <td>${esc(m.name)}</td>
+      <td class="org">${esc(m.organization)}</td>
+      <td class="num score">${m.score}</td>
+      <td>${m.profile_url ? `<a href="${esc(m.profile_url)}" target="_blank" rel="noopener">profile</a>` : ''}</td>
+    </tr>`).join('');
+})().catch(e => { document.getElementById('body').innerHTML = `<tr><td colspan="5">読込失敗: ${esc(e.message)}</td></tr>`; });
+</script>
+</body>
+</html>

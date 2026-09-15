@@ -40,6 +40,61 @@ CINII_APPID=your_id bin/rails yose:sync_kodanshi  # CiNii 同期
 bin/rails test
 ```
 
-## BigQuery ML (埋め込み検索)
+## GitHub Pages (静的API・計算はCI)
 
-講談師エントリのベクトル埋め込みを BigQuery ML で生成し、`VECTOR_SEARCH` による KNN セマンティック検索を行う(実装中。`app/lib/bigquery/` 参照)。
+`docs/` が GitHub Pages のソース。`bin/rails yose:export_pages` が以下を生成する:
+
+- `docs/data/all_graph.json` — 全講談師の精製グラフ(ノード: 団体/講談師、エッジ: 所属・rank)
+- `docs/data/zenza.json` — 前座ランキング(暫定は注目度/話題量 = CiNii 合計ヒット数)
+
+`.github/workflows/pages.yml` が push 時に **CI 内で DB を作り → 名簿を読み → JSON を計算して Pages にデプロイ**する。Pages 設定は Source = GitHub Actions。
+
+- https://bonsai.github.io/yose-db/ (全講談師グラフ)
+- https://bonsai.github.io/yose-db/zenza (前座ランキング)
+
+ローカル確認: `python3 -m http.server 8008 --bind 0.0.0.0` を `docs/` で(`scripts/static_pages.sh`)。
+
+## GCP (Cloud Run + Cloud SQL)
+
+`.github/workflows/deploy-gcp.yml` が Workload Identity Federation で Cloud Build → Cloud Run デプロイを行う(手動Trigger、`project_id` を入力)。
+
+### 初回セットアップ(一度だけ)
+
+```bash
+# 1) プロジェクトで API を有効化
+gcloud services enable run.googleapis.com artifactregistry.googleapis.com \
+  builds.googleapis.com cloudbuild.googleapis.com sqladmin.googleapis.com \
+  secretmanager.googleapis.com iamcredentials.googleapis.com
+
+# 2) Cloud SQL (PostgreSQL) を作成、DB/user 作成、接続名を控える
+gcloud sql instances create yose-db --database-version=POSTGRES_16 \
+  --region=asia-northeast1 --tier=db-f1-micro
+gcloud sql databases create yose_db --instance=yose-db
+gcloud sql users create bons --instance=yose-db --password=...
+
+# 3) シークレット
+#   CLOUD_SQL_URL  : postgres://bons:pass@/yose_db?host=/cloudsql/PROJECT:REGION:yose-db
+#   RAILS_SECRET_KEY_BASE : bin/rails secret
+#   RAILS_MASTER_KEY : config/master.key の内容
+#   CINII_APPID    : (任意)
+gcloud secrets create cloud_sql_url --data-file=-
+gcloud secrets create rails_secret_key_base --data-file=-
+# ...
+
+# 4) Workload Identity Federation (GitHub Actions 用)
+#    provider 名: projects/PROJECT/locations/global/workloadIdentityPools/github-actions/providers/github
+#    サービスアカウントに IAM ロール:
+#      Cloud Run デプロイ: roles/run.admin, roles/iam.serviceAccountUser
+#      Cloud Build:        roles/cloudbuild.builds.editor
+#      Secret 参照:        roles/secretmanager.secretAccessor
+
+# 5) リポジトリの Actions variables/secrets に以下を設定
+#     vars:  GCP_WIF_PROVIDER, GCP_SERVICE_ACCOUNT, GCP_REGION, (GCP_REGISTRY=asia-northeast1-docker.pkg.dev/PROJECT/repo)
+#     secrets: CLOUD_SQL_URL, RAILS_SECRET_KEY_BASE, RAILS_MASTER_KEY, CINII_APPID, CLOUD_SQL_INSTANCE
+
+# 6) Actions → Deploy to Cloud Run (GCP) → Run workflow (project_id を入力)
+```
+
+## BigQuery ML (埋め込み)
+
+講談師エントリのベクトル埋め込みを BigQuery ML で生成し `VECTOR_SEARCH` する構成は実装予定(前座ランキングの6軸評価と連動予定)。詳細は `plan/bqml.md` を参照予定。

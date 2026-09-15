@@ -1,0 +1,72 @@
+name: Deploy GitHub Pages (compute in CI)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'db/seeds/**'
+      - 'lib/kodanshi*/**'
+      - 'lib/cinii/**'
+      - 'lib/yose/**'
+      - 'docs/**'
+      - 'Gemfile*'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: bons
+          POSTGRES_PASSWORD: bons
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U bons"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Create DB and load roster
+        run: |
+          bin/rails db:create db:migrate
+          bin/rails yose:load_kodanshi
+
+      - name: Compute static API (graph + zenza)
+        run: bin/rails yose:export_pages
+
+      - name: Verify static API
+        run: |
+          test -s docs/data/all_graph.json || exit 1
+          test -s docs/data/zenza.json || exit 1
+          ruby -rjson -e 'JSON.parse(File.read("docs/data/all_graph.json")); JSON.parse(File.read("docs/data/zenza.json"))'
+          echo "computed: $(grep -o '"member_count": [0-9]*' docs/data/all_graph.json | head -1)"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        env:
+          CI: true

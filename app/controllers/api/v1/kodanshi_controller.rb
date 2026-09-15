@@ -29,6 +29,16 @@ module Api
         render json: { error: e.message }, status: :unprocessable_entity
       end
 
+      # GET /api/v1/kodanshi/all_graph  (全講談師: ノード+エッジの精製グラフ)
+      def all_graph
+        render json: Kodanshi::Graph.all_graph(store: @store)
+      end
+
+      # GET /api/v1/kodanshi/zenza  (前座ランキング)
+      def zenza
+        render json: Kodanshi::Graph.zenza(store: @store)
+      end
+
       private
 
       def store

@@ -36,4 +36,18 @@ namespace :yose do
       puts "#{r['uid']}  #{r['obj'].inspect}"
     end
   end
+
+  desc "GitHub Pages 用の静的API(JSON)を docs/data/ に書き出す (全講談師グラフ + 前座)"
+  task export_pages: :environment do
+    docs = Rails.root.join("docs")
+    data = docs.join("data")
+    FileUtils.mkdir_p(data)
+    store = Yose::Store.new
+    all = Kodanshi::Graph.all_graph(store: store)
+    zenza = Kodanshi::Graph.zenza(store: store)
+    File.write(data.join("all_graph.json"), JSON.pretty_generate(all))
+    File.write(data.join("zenza.json"), JSON.pretty_generate(zenza))
+    puts "docs/data/all_graph.json  (#{all['meta']['member_count']} members / #{all['nodes'].size} nodes / #{all['edges'].size} edges)"
+    puts "docs/data/zenza.json      (#{zenza['meta']['count']} zenza)"
+  end
 end
