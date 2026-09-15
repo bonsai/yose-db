@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/bonsai/yose-db/schema.json",
+  "title": "Yose DB",
+  "type": "object",
+  "required": ["id", "type", "name", "sources"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "enum": ["venue", "event_series", "event", "performer", "organization"] },
+    "name": { "type": "string" },
+    "name_kana": { "type": "string" },
+    "description": { "type": "string" },
+    "address": { "type": "string" },
+    "telephone": { "type": "string" },
+    "category": { "type": "array", "items": { "type": "string" } },
+    "venue_id": { "type": "string" },
+    "organization_ids": { "type": "array", "items": { "type": "string" } },
+    "performer_ids": { "type": "array", "items": { "type": "string" } },
+    "schedule": { "type": "array", "items": { "type": "string", "format": "date-time" } },
+    "ticket": { "type": "object", "properties": {
+      "price_yen": { "type": "integer" },
+      "student_price_yen": { "type": "integer" },
+      "payment": { "type": "string" },
+      "reservation": { "type": "string" }
+    }, "additionalProperties": false },
+    "sources": { "type": "array", "items": { "type": "object", "required": ["url", "kind"], "properties": {
+      "url": { "type": "string", "format": "uri" },
+      "kind": { "type": "string", "enum": ["official", "association", "venue", "secondary"] }
+    }, "additionalProperties": false } }
+  },
+  "additionalProperties": false
+}

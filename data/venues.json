@@ -1,0 +1,14 @@
+[
+  {
+    "id": "venue-tsurumei-hall",
+    "type": "venue",
+    "name": "鶴めいホール",
+    "address": "〒102-0072 東京都千代田区飯田橋2丁目5-4",
+    "telephone": "03-6272-8080",
+    "category": ["hall", "yose", "rakugo", "kodan", "rokyoku"],
+    "sources": [
+      { "url": "https://nanokatei.official.ec/", "kind": "official" },
+      { "url": "https://kodankyokai.jp/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/%E9%B6%B4%E3%82%81%E3%81%84%E4%B8%83%E5%8F%B6%E4%BA%AD%EF%BC%88%E3%81%8B%E3%81%8F%E3%82%81%E3%81%84%E3%80%80%E3%81%AA%E3%81%8B%E3%81%AE%E3%81%A6%E3%81%84%EF%BC%89/", "kind": "association" }
+    ]
+  }
+]
