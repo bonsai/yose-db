@@ -1,0 +1,21 @@
+[
+  {
+    "id": "event-series-tsurumei-nanokatei",
+    "type": "event_series",
+    "name": "鶴めい七叶亭",
+    "name_kana": "かくめい なかのてい",
+    "description": "東京・九段下の鶴めいホールで、一日三名・毎月七日間開催される、芸歴30年未満の真打21名による会。落語・講談・浪曲の最前線を掲げる。",
+    "venue_id": "venue-tsurumei-hall",
+    "category": ["rakugo", "kodan", "rokyoku"],
+    "ticket": {
+      "price_yen": 3000,
+      "student_price_yen": 2500,
+      "payment": "現金のみ・当日受付",
+      "reservation": "事前予約不要"
+    },
+    "sources": [
+      { "url": "https://nanokatei.official.ec/", "kind": "official" },
+      { "url": "https://kodankyokai.jp/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/%E9%B6%B4%E3%82%81%E3%81%84%E4%B8%83%E5%8F%B6%E4%BA%AD%EF%BC%88%E3%81%8B%E3%81%8F%E3%82%81%E3%81%84%E3%80%80%E3%81%AA%E3%81%8B%E3%81%AE%E3%81%A6%E3%81%84%EF%BC%89/", "kind": "association" }
+    ]
+  }
+]
