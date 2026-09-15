@@ -1,0 +1,132 @@
+ontology:
+  id: yose
+  label: 寄席芸能オントロジー
+  version: 0.1.0
+  description: >-
+    落語・講談・浪曲などの寄席芸能を、主体・客体・場・出来事・関係・情報源として
+    記述するための軽量オントロジー。yose-db の実データモデルを意味的に定義する。
+
+classes:
+  - id: CulturalEvent
+    label: 公演・催事
+    description: 観客に対して芸能が提示される出来事。
+  - id: EventSeries
+    label: 公演シリーズ
+    subclass_of: CulturalEvent
+    description: 定例会・連続公演など、複数の公演をまとめる概念。
+  - id: Performance
+    label: 個別公演
+    subclass_of: CulturalEvent
+  - id: Venue
+    label: 会場
+    description: 公演が行われる物理的な場所。
+  - id: Performer
+    label: 演者
+    description: 落語・講談・浪曲などを演じる主体。
+  - id: Organization
+    label: 団体
+    description: 公演を主催・運営・所属管理する組織。
+  - id: ArtForm
+    label: 芸能種別
+    description: 落語・講談・浪曲などの芸能形式。
+  - id: Ticket
+    label: 入場券
+    description: 公演への参加権とその価格・条件。
+  - id: Source
+    label: 情報源
+    description: 事実を裏付ける公式サイト等の情報源。
+  - id: Audience
+    label: 観客
+    description: 公演を経験する主体。
+
+art_forms:
+  - id: Rakugo
+    label: 落語
+  - id: Kodan
+    label: 講談
+  - id: Rokyoku
+    label: 浪曲
+
+properties:
+  - id: hasVenue
+    domain: CulturalEvent
+    range: Venue
+    inverse: hostsEvent
+  - id: hasPerformer
+    domain: CulturalEvent
+    range: Performer
+    inverse: performsAt
+  - id: organizedBy
+    domain: CulturalEvent
+    range: Organization
+    inverse: organizes
+  - id: hasArtForm
+    domain: CulturalEvent
+    range: ArtForm
+  - id: partOfSeries
+    domain: Performance
+    range: EventSeries
+  - id: hasTicket
+    domain: CulturalEvent
+    range: Ticket
+  - id: supportedBy
+    domain: CulturalEvent
+    range: Source
+  - id: occursAt
+    domain: CulturalEvent
+    range: Venue
+  - id: occursOn
+    domain: CulturalEvent
+    range: "xsd:dateTime"
+  - id: hasName
+    range: "xsd:string"
+  - id: hasAddress
+    domain: Venue
+    range: "xsd:string"
+
+relations:
+  - id: hostsEvent
+    domain: Venue
+    range: CulturalEvent
+  - id: performsAt
+    domain: Performer
+    range: CulturalEvent
+  - id: organizes
+    domain: Organization
+    range: CulturalEvent
+
+instances:
+  - id: tsurumei-nanokatei
+    class: EventSeries
+    label: 鶴めい七叶亭
+    facts:
+      hasVenue: tsurumei-hall
+      hasArtForm: [Rakugo, Kodan, Rokyoku]
+      supportedBy: [nanokatei-official, kodan-association]
+  - id: tsurumei-hall
+    class: Venue
+    label: 鶴めいホール
+    facts:
+      hasAddress: "東京都千代田区飯田橋2丁目5-4"
+  - id: nanokatei-official
+    class: Source
+    label: 鶴めい七叶亭公式サイト
+    facts:
+      url: https://nanokatei.official.ec/
+  - id: kodan-association
+    class: Source
+    label: 講談協会公式イベントページ
+    facts:
+      url: https://kodankyokai.jp/
+
+patterns:
+  event_context: "Performer -> performsAt -> CulturalEvent -> occursAt -> Venue"
+  event_provenance: "CulturalEvent -> supportedBy -> Source"
+  event_organization: "Organization -> organizes -> CulturalEvent"
+  event_series: "Performance -> partOfSeries -> EventSeries"
+  event_art: "CulturalEvent -> hasArtForm -> ArtForm"
+
+notes:
+  - "DB の JSON Schema は保存形式、ontology.yaml は意味・関係・概念の定義として分離する。"
+  - "現時点では軽量オントロジーとし、将来 RDF/OWL に変換可能な構造を保つ。"
+  - "鶴めい七叶亭は実データの最初のリファレンス個体として扱う。"
