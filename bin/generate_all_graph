@@ -1,0 +1,55 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "json"
+require "yaml"
+
+seed = YAML.safe_load_file("db/seeds/kodanshi_2026.yml")
+organizations = seed.fetch("organizations").map do |org|
+  {
+    "name" => org.fetch("name"),
+    "url" => org["url"],
+    "members" => org.fetch("members").map do |member|
+      {
+        "name" => member.fetch("name"),
+        "rank" => member["rank"],
+        "url" => member["url"]
+      }.compact
+    end
+  }
+end
+
+free = {
+  "name" => "無所属",
+  "members" => seed.fetch("free").fetch("members").map do |member|
+    {
+      "name" => member.fetch("name"),
+      "rank" => member["rank"],
+      "url" => member["url"],
+      "description" => member["description"]
+    }.compact
+  end
+}
+
+members = organizations.flat_map { |org| org["members"].map { |m| m.merge("organization" => org["name"]) } }
+members.concat(free["members"].map { |m| m.merge("organization" => free["name"]) })
+
+stats = {
+  "kodanshi" => members.size,
+  "organizations" => organizations.size + 1,
+  "shinuchi" => members.count { |m| m["rank"] == "真打" },
+  "futatsume" => members.count { |m| m["rank"] == "二ツ目" },
+  "zenza" => members.count { |m| m["rank"] == "前座" }
+}
+
+payload = {
+  "year" => 2026,
+  "source" => seed.fetch("source"),
+  "stats" => stats,
+  "organizations" => organizations,
+  "free" => free,
+  "groups" => organizations + [free]
+}
+
+File.write("data/all_graph.json", JSON.pretty_generate(payload) + "\n")
+warn "generated data/all_graph.json: #{stats.inspect}"
