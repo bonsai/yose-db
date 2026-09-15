@@ -9,6 +9,7 @@ on:
       - 'lib/cinii/**'
       - 'lib/yose/**'
       - 'docs/**'
+      - 'graph.html'
       - 'Gemfile*'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -60,6 +61,9 @@ jobs:
           test -s docs/data/zenza.json || exit 1
           ruby -rjson -e 'JSON.parse(File.read("docs/data/all_graph.json")); JSON.parse(File.read("docs/data/zenza.json"))'
           echo "computed: $(grep -o '"member_count": [0-9]*' docs/data/all_graph.json | head -1)"
+
+      - name: Include existing ontology graph viewer
+        run: cp graph.html docs/graph.html
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
