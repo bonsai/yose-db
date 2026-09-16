@@ -6,6 +6,7 @@ on:
   schedule:
     - cron: "0 12 * * 1"
   workflow_dispatch:
+model: gpt-5-mini
 permissions:
   contents: read
   issues: read
