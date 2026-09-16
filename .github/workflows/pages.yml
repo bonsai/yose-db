@@ -46,7 +46,7 @@ jobs:
           cp services/rakugo/data/rakugo/zenza_counts.json _site/data/rakugo/zenza_counts.json
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
