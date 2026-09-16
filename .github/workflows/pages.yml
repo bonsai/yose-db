@@ -7,8 +7,10 @@ on:
       - 'all_graph.html'
       - 'zenza.html'
       - 'graph.html'
+      - 'rakugo_zenza.html'
       - 'bin/generate_all_graph'
       - 'db/seeds/kodanshi_2026.yml'
+      - 'services/rakugo/data/rakugo/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -37,8 +39,11 @@ jobs:
           cp all_graph.html _site/index.html
           cp zenza.html _site/zenza.html
           cp graph.html _site/graph.html
+          cp rakugo_zenza.html _site/rakugo_zenza.html
           cp data/all_graph.json _site/data/all_graph.json
           cp data/zenza.json _site/data/zenza.json
+          mkdir -p _site/data/rakugo
+          cp services/rakugo/data/rakugo/zenza_counts.json _site/data/rakugo/zenza_counts.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

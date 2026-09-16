@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>落語家の前座数 - yose-db</title>
+<style>
+  :root { --ink:#1a1a1a; --muted:#6b6259; --line:#e6ddd2; --bg:#faf7f2; --card:#fff; --accent:#b3411f; --k3:#2e6b50; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:"Hiragino Kaku Gothic ProN", Meiryo, sans-serif; color:var(--ink); background:var(--bg); }
+  header { background:linear-gradient(135deg,#232b16,#2c1a12); color:#f5ead8; padding:22px 24px; }
+  header h1 { margin:0; font-size:22px; }
+  header p { margin:6px 0 0; font-size:13px; color:#cdb99e; }
+  header a { color:#e8c98a; }
+  main { max-width:760px; margin:0 auto; padding:20px 16px 50px; }
+  .basis { color:var(--muted); font-size:12px; margin-bottom:14px; }
+  table { width:100%; border-collapse:collapse; background:var(--card); box-shadow:0 1px 3px rgba(0,0,0,.08); }
+  th, td { padding:9px 11px; border-bottom:1px solid var(--line); text-align:left; font-size:13px; }
+  th { background:#efe6d8; text-align:left; }
+  td.year { font-weight:bold; color:#3d3d3d; }
+  td.num { text-align:right; }
+  .src { display:inline-block; font-size:10px; padding:1px 6px; border-radius:3px; margin-right:3px; vertical-align:middle; }
+  .s-roster { background:#dcefe1; color:#2e6b50; }
+  .s-estimate { background:#f7e8c6; color:#8a5a00; }
+  .s-nodata { background:#eee; color:#999; }
+  .total { font-weight:bold; color:var(--accent); }
+  legend { font-size:12px; color:var(--muted); margin:14px 0 4px; }
+  .note { font-size:12px; color:var(--muted); line-height:1.7; margin-top:16px; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:12px; text-align:center; padding:18px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>落語家の前座数</h1>
+  <p>rakugo — 各協会の前座修行者数を推定。データ: <a href="./data/rakugo/zenza_counts.json">data/rakugo/zenza_counts.json</a>(静的API)｜<a href="./zenza.html">講談の前座ランキングへ</a></p>
+</header>
+<main>
+  <p class="basis" id="basis"></p>
+  <legend>凡例: <span class="src s-roster">roster</span> 名簿実測 / <span class="src s-estimate">estimate</span> 二ツ目昇進者数による推計 / <span class="src s-nodata">no-data</span> 未収集</legend>
+  <div style="overflow-x:auto"><table>
+    <thead id="head"><tr><th>年</th></tr></thead>
+    <tbody id="body"></tbody>
+  </table></div>
+  <p class="note" id="note"></p>
+</main>
+<footer>モデル: 前座数 ≈ Σ(二ツ目昇進者数 × retention^経過年)、retention=0.75 / 修行3年（検証対象）</footer>
+<script>
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const badge = s => s === 'roster' ? '<span class="src s-roster">roster</span>'
+              : s === 'estimate' ? '<span class="src s-estimate">estimate</span>'
+              : '<span class="src s-nodata">no-data</span>';
+(async () => {
+  const res = await fetch('./data/rakugo/zenza_counts.json');
+  const d = await res.json();
+  const m = d.meta;
+  document.getElementById('basis').textContent =
+    `集計: ${esc(m.generated_at)} — ${esc(m.method)}（retention=${m.retention} / 修行${m.practice_term_years}年）`;
+  document.getElementById('note').textContent =
+    '「estimate」はその年の名簿が無い年を、前後の二ツ目昇進者数から proxy 推計した値。「no-data」はその団体の名簿スナップショットをまだ収集していないことを示す。';
+
+  const orgs = [];
+  const seen = new Set();
+  for (const row of d.by_year) for (const name in row.counts) if (!seen.has(name)) { seen.add(name); orgs.push(name); }
+  document.getElementById('head').firstElementChild.innerHTML =
+    '<th>年</th>' + orgs.map(o => `<th>${esc(o)}</th>`).join('') + '<th class="num">総数</th>';
+
+  document.getElementById('body').innerHTML = (d.by_year.reverse().map(row => {
+    let sum = 0;
+    const cells = orgs.map(o => {
+      const c = row.counts[o];
+      if (c && c.source === 'roster') sum += c.count;
+      const count = c ? c.count : 0;
+      const src = c ? c.source : 'no-data';
+      return `<td class="num">${badge(src)}${count}</td>`;
+    }).join('');
+    return `<tr><td class="year">${row.year}</td>${cells}<td class="num total">${sum}</td></tr>`;
+  }).join(''));
+})().catch(e => { document.getElementById('body').innerHTML = `<tr><td colspan="5">読込失敗: ${esc(e.message)}</td></tr>`; });
+</script>
+</body>
+</html>
