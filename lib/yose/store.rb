@@ -127,7 +127,7 @@ module Yose
         WHERE mtime > $1::timestamptz
         ORDER BY mtime DESC
       SQL
-      since = since.utc.iso8601 if since.is_a?(Time)
+      since = since.utc.iso8601(6) if since.is_a?(Time)
       query_all(sql, since)
     end
 

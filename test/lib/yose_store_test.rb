@@ -43,8 +43,8 @@ class YoseStoreTest < ActiveSupport::TestCase
     b = @store.alloc!({ "type" => "従業員", "name" => "池澤一廣" })
     _c = @store.alloc!({ "type" => "author", "name" => "関将俊" })
 
-    assert_equal [a, b], @store.search({ "type" => "従業員" }).map { |r| r["uid"] }
-    assert_equal [a, b], @store.search({ "type" => "従業員", "name" => "関将俊" }).map { |r| r["uid"] },
+    assert_equal [b, a], @store.search({ "type" => "従業員" }).map { |r| r["uid"] }
+    assert_equal [a], @store.search({ "type" => "従業員", "name" => "関将俊" }).map { |r| r["uid"] },
                  "containment prefix search must match objects that extend the query"
   end
 

@@ -26,7 +26,7 @@ class KodanshiTest < ActiveSupport::TestCase
 
     records = @store.search({ "type" => "講談師" })
     assert_equal 123, records.size
-    assert_match(/講談師/, records.first["obj"]["name"])
+    assert_match(/講談師/, records.first["obj"]["type"])
     assert_equal "神田伯山", @store.search({ "type" => "講談師", "name" => "神田伯山" }).first["obj"]["name"]
   end
 

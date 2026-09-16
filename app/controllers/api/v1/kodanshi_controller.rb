@@ -7,8 +7,9 @@ module Api
 
       # GET /api/v1/kodanshi
       def index
-        render json: { count: @store.search({ "type" => "講談師" }).size,
-                       kodanshi: @store.search({ "type" => "講談師" }) }
+        list = @store.search({ "type" => "講談師" })
+        render json: { count: list.size,
+                       kodanshi: Api::V1::KodanshiItemSerializer.new(list).serializable_hash }
       end
 
       # GET /api/v1/kodanshi/:uid
@@ -31,12 +32,12 @@ module Api
 
       # GET /api/v1/kodanshi/all_graph  (全講談師: ノード+エッジの精製グラフ)
       def all_graph
-        render json: Kodanshi::Graph.all_graph(store: @store)
+        render json: Api::V1::AllGraphSerializer.new(Kodanshi::Graph.all_graph(store: @store)).serializable_hash
       end
 
       # GET /api/v1/kodanshi/zenza  (前座ランキング)
       def zenza
-        render json: Kodanshi::Graph.zenza(store: @store)
+        render json: Api::V1::ZenzaSerializer.new(Kodanshi::Graph.zenza(store: @store)).serializable_hash
       end
 
       private

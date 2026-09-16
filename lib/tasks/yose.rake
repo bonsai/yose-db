@@ -37,17 +37,9 @@ namespace :yose do
     end
   end
 
-  desc "GitHub Pages 用の静的API(JSON)を docs/data/ に書き出す (全講談師グラフ + 前座)"
+  desc "静的API(data/all_graph.json, data/zenza.json)を bin/generate_all_graph で生成する"
   task export_pages: :environment do
-    docs = Rails.root.join("docs")
-    data = docs.join("data")
-    FileUtils.mkdir_p(data)
-    store = Yose::Store.new
-    all = Kodanshi::Graph.all_graph(store: store)
-    zenza = Kodanshi::Graph.zenza(store: store)
-    File.write(data.join("all_graph.json"), JSON.pretty_generate(all))
-    File.write(data.join("zenza.json"), JSON.pretty_generate(zenza))
-    puts "docs/data/all_graph.json  (#{all['meta']['member_count']} members / #{all['nodes'].size} nodes / #{all['edges'].size} edges)"
-    puts "docs/data/zenza.json      (#{zenza['meta']['count']} zenza)"
+    system(Rails.root.join("bin/generate_all_graph").to_s, exception: true)
+    puts "data/all_graph.json + data/zenza.json を更新しました"
   end
 end

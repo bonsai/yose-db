@@ -2,6 +2,15 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.1.3", ">= 8.1.3.1"
+# 銷答のレスポンスは Alba で行う
+gem "alba"
+
+# json 3.x は JSON.parse をキーワード専用に変更。ActionDispatch のリクエストボディ
+# パースと ActiveSupport::JSON.decode が位置引数で呼ぶため、2.x に固定する。
+gem "json", "~> 2.7"
+
+# minitest 6 は minitest/mock(Object#stub) が削除されたため 5.x に固定
+gem "minitest", "~> 5.25", group: :test
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]

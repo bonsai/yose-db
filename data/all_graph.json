@@ -1,0 +1,1237 @@
+{
+  "year": 2026,
+  "source": {
+    "url": "https://wagei.deci.jp/wordpress/geneki-kodanshi-list-2026/",
+    "title": "現役講談師 一覧 2026年版｜全5団体・119名の講談師",
+    "retrieved_at": "2026-07-13"
+  },
+  "stats": {
+    "kodanshi": 123,
+    "organizations": 6,
+    "shinuchi": 51,
+    "futatsume": 17,
+    "zenza": 10
+  },
+  "organizations": [
+    {
+      "name": "講談協会",
+      "url": "https://kodankyokai.jp/",
+      "members": [
+        {
+          "name": "宝井琴梅",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinbai/"
+        },
+        {
+          "name": "宝井琴桜",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kino/"
+        },
+        {
+          "name": "一龍齋貞花",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teika/"
+        },
+        {
+          "name": "一龍齋貞心",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teisin/"
+        },
+        {
+          "name": "宝井琴柳",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinryu/"
+        },
+        {
+          "name": "宝井琴星",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinsei/"
+        },
+        {
+          "name": "宝井琴調",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kincho/"
+        },
+        {
+          "name": "桃川鶴女",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/momokawa-tsurujo/"
+        },
+        {
+          "name": "田辺南北",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-nanboku/"
+        },
+        {
+          "name": "宝井琴嶺",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinrei/"
+        },
+        {
+          "name": "神田すみれ",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-sumire/"
+        },
+        {
+          "name": "神田香織",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-kaori/"
+        },
+        {
+          "name": "田辺鶴英",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-kakuei/"
+        },
+        {
+          "name": "一龍齋春水",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-harumi/"
+        },
+        {
+          "name": "一龍齋貞友",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teiyu/"
+        },
+        {
+          "name": "田辺一邑",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-ichiyu/"
+        },
+        {
+          "name": "宝井梅福",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-umefuku/"
+        },
+        {
+          "name": "神田織音",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-orine/"
+        },
+        {
+          "name": "田辺凌鶴",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-ryokaku/"
+        },
+        {
+          "name": "一龍齋貞橘",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teikitsu/"
+        },
+        {
+          "name": "宝井一凜",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-ichirin/"
+        },
+        {
+          "name": "田ノ中星之助",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanonaka-hoshinosuke/"
+        },
+        {
+          "name": "神田春陽",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-shunyo/"
+        },
+        {
+          "name": "田辺鶴遊",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-kakuyu/"
+        },
+        {
+          "name": "神田あおい",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-aoi/"
+        },
+        {
+          "name": "一龍齋貞寿",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teiju/"
+        },
+        {
+          "name": "神田山緑",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-sanryoku/"
+        },
+        {
+          "name": "田辺一乃",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-kazuno/"
+        },
+        {
+          "name": "宝井琴鶴",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinkaku/"
+        },
+        {
+          "name": "神田董花",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-sumika/"
+        },
+        {
+          "name": "田辺銀冶",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-ginya/"
+        },
+        {
+          "name": "一龍齋貞弥",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teiya/"
+        },
+        {
+          "name": "一龍齋貞鏡",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teikyo/"
+        },
+        {
+          "name": "宝井琴凌",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-umeyu/"
+        },
+        {
+          "name": "神田こなぎ",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-konagi/"
+        },
+        {
+          "name": "田辺いちか",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/tanabe-ichika/"
+        },
+        {
+          "name": "田辺凌天",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/tanabe-ryoten/"
+        },
+        {
+          "name": "一龍斎貞奈",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/ichiryusai-teina/"
+        },
+        {
+          "name": "神田伊織",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/kanda-iori/"
+        },
+        {
+          "name": "田辺一記",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/tanabe-kazuki/"
+        },
+        {
+          "name": "一龍斎貞司",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/ichiryusai-teiji/"
+        },
+        {
+          "name": "宝井小琴",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/takarai-kokin/"
+        },
+        {
+          "name": "神田おりびあ",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/kanda-oribia/"
+        },
+        {
+          "name": "宝井優星",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/takarai-yuusei/"
+        },
+        {
+          "name": "神田ようかん",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/kanda-youkan/"
+        },
+        {
+          "name": "神田蓮陽",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/kanda-renyou/"
+        },
+        {
+          "name": "田辺凌々",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/tanabe-ryouryou/"
+        },
+        {
+          "name": "宝井琴人",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/takarai-kinto/"
+        },
+        {
+          "name": "一龍斎貞昌",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/itiryuusai-teishou/"
+        },
+        {
+          "name": "神田山兎",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/kanda-santo/"
+        }
+      ]
+    },
+    {
+      "name": "日本講談協会",
+      "url": "https://www.n-kodan.com/",
+      "members": [
+        {
+          "name": "神田松鯉",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/shouri/"
+        },
+        {
+          "name": "神田愛山",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/aizan/"
+        },
+        {
+          "name": "神田陽子",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/yoko/"
+        },
+        {
+          "name": "神田紫",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/murasaki/"
+        },
+        {
+          "name": "神田紅",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/kurenai/"
+        },
+        {
+          "name": "神田茜",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/akane/"
+        },
+        {
+          "name": "神田昌味",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/masami/"
+        },
+        {
+          "name": "神田山陽",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/sanyou/"
+        },
+        {
+          "name": "神田鯉風",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/rifu/"
+        },
+        {
+          "name": "神田山吹",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/yamabuki/"
+        },
+        {
+          "name": "神田阿久鯉",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/aguri/"
+        },
+        {
+          "name": "神田京子",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/kyoko/"
+        },
+        {
+          "name": "神田鯉栄",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/riei/"
+        },
+        {
+          "name": "神田蘭",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/ran/"
+        },
+        {
+          "name": "神田伯山",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/hakuzan/"
+        },
+        {
+          "name": "松林伯知",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/hakuchi/"
+        },
+        {
+          "name": "神田紅佳",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/benika/"
+        },
+        {
+          "name": "神田紅純",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/koujyun/"
+        },
+        {
+          "name": "神田桜子",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/sakurako/"
+        },
+        {
+          "name": "神田松麻呂",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/matsumaro/"
+        },
+        {
+          "name": "神田陽乃丸",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/hinomaru/"
+        },
+        {
+          "name": "神田鯉花",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/rika/"
+        },
+        {
+          "name": "神田紅希",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/kouki/"
+        },
+        {
+          "name": "神田梅之丞",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/ume/"
+        },
+        {
+          "name": "神田青之丞",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/ao/"
+        },
+        {
+          "name": "神田若之丞",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/waka/"
+        },
+        {
+          "name": "神田松樹",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/matsuki/"
+        },
+        {
+          "name": "神田紫天",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/shiten/"
+        }
+      ]
+    },
+    {
+      "name": "上方講談協会",
+      "url": "https://www.kamigata-kodan.jp/",
+      "members": [
+        {
+          "name": "旭堂南左衛門",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanzaemon"
+        },
+        {
+          "name": "旭堂南舟",
+          "url": "https://kamigata-kodan.jp/index.php/member/nansyu"
+        },
+        {
+          "name": "旭堂南斗",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanto"
+        },
+        {
+          "name": "旭堂南鷹",
+          "url": "https://kamigata-kodan.jp/index.php/member/nano"
+        },
+        {
+          "name": "旭堂南歌",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanka"
+        },
+        {
+          "name": "旭堂南亰",
+          "url": "https://kamigata-kodan.jp/index.php/member/nankyo"
+        },
+        {
+          "name": "旭堂南文字",
+          "url": "https://kamigata-kodan.jp/index.php/member/namonji"
+        },
+        {
+          "name": "旭堂南扇",
+          "url": "https://kamigata-kodan.jp/index.php/member/nansen"
+        },
+        {
+          "name": "旭堂南門",
+          "url": "https://kamigata-kodan.jp/index.php/member/namon"
+        },
+        {
+          "name": "旭堂南山",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanzan"
+        },
+        {
+          "name": "旭堂南之助",
+          "url": "https://kamigata-kodan.jp/index.php/member/nannosuke"
+        },
+        {
+          "name": "旭堂南生",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanshou"
+        },
+        {
+          "name": "旭堂南月",
+          "url": "https://kamigata-kodan.jp/index.php/member/nangetsu"
+        },
+        {
+          "name": "旭堂南楽",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanraku"
+        },
+        {
+          "name": "旭堂南雲",
+          "url": "https://kamigata-kodan.jp/index.php/member/nagumo"
+        },
+        {
+          "name": "旭堂南歩",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanpo"
+        },
+        {
+          "name": "旭堂南丸",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanpo"
+        },
+        {
+          "name": "旭堂南不二",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/minamihuji"
+        },
+        {
+          "name": "旭堂南星",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/nansei"
+        },
+        {
+          "name": "旭堂南隼",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/nanshun"
+        },
+        {
+          "name": "旭堂南士",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/nanshi"
+        }
+      ]
+    },
+    {
+      "name": "大阪講談協会",
+      "url": "https://www.osaka-kodankyoukai.com/",
+      "members": [
+        {
+          "name": "旭堂南慶",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nankei"
+        },
+        {
+          "name": "旭堂みなみ",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#minami"
+        },
+        {
+          "name": "旭堂南照",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanshou"
+        },
+        {
+          "name": "旭堂南桜",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanou"
+        },
+        {
+          "name": "旭堂南鈴",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanrei"
+        },
+        {
+          "name": "旭堂南遊",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanyu"
+        },
+        {
+          "name": "旭堂南明",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanmei"
+        },
+        {
+          "name": "旭堂南風",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanpu"
+        },
+        {
+          "name": "旭堂南璃",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanri"
+        },
+        {
+          "name": "旭堂南和",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanwa"
+        },
+        {
+          "name": "旭堂みふく",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#mifuku"
+        },
+        {
+          "name": "旭堂南千王",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/"
+        },
+        {
+          "name": "旭堂南高梅",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/"
+        }
+      ]
+    },
+    {
+      "name": "なみはや講談協会",
+      "url": "https://namihaya-kodan.com/",
+      "members": [
+        {
+          "name": "旭堂南鱗",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂南華",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂南海",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂南湖",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂鱗林",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂一海",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂左燕",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        }
+      ]
+    }
+  ],
+  "free": {
+    "name": "無所属",
+    "members": [
+      {
+        "name": "悟道軒圓玉",
+        "url": "https://ja.wikipedia.org/wiki/悟道軒圓玉",
+        "description": "二代目。1980年の講談協会再統一に不参加、以降フリー"
+      },
+      {
+        "name": "神田昇龍",
+        "url": "https://ja.wikipedia.org/wiki/神田昇龍",
+        "description": "東京・伯龍一門"
+      },
+      {
+        "name": "日向ひまわり",
+        "url": "https://ja.wikipedia.org/wiki/日向ひまわり",
+        "description": "東京・山陽一門出身"
+      },
+      {
+        "name": "玉田玉秀斎",
+        "url": "https://ja.wikipedia.org/wiki/玉田玉秀斎",
+        "description": "四代目。2021年に大阪講談協会を退会しフリー（旧名・旭堂南陽）"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "name": "講談協会",
+      "url": "https://kodankyokai.jp/",
+      "members": [
+        {
+          "name": "宝井琴梅",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinbai/"
+        },
+        {
+          "name": "宝井琴桜",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kino/"
+        },
+        {
+          "name": "一龍齋貞花",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teika/"
+        },
+        {
+          "name": "一龍齋貞心",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teisin/"
+        },
+        {
+          "name": "宝井琴柳",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinryu/"
+        },
+        {
+          "name": "宝井琴星",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinsei/"
+        },
+        {
+          "name": "宝井琴調",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kincho/"
+        },
+        {
+          "name": "桃川鶴女",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/momokawa-tsurujo/"
+        },
+        {
+          "name": "田辺南北",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-nanboku/"
+        },
+        {
+          "name": "宝井琴嶺",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinrei/"
+        },
+        {
+          "name": "神田すみれ",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-sumire/"
+        },
+        {
+          "name": "神田香織",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-kaori/"
+        },
+        {
+          "name": "田辺鶴英",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-kakuei/"
+        },
+        {
+          "name": "一龍齋春水",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-harumi/"
+        },
+        {
+          "name": "一龍齋貞友",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teiyu/"
+        },
+        {
+          "name": "田辺一邑",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-ichiyu/"
+        },
+        {
+          "name": "宝井梅福",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-umefuku/"
+        },
+        {
+          "name": "神田織音",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-orine/"
+        },
+        {
+          "name": "田辺凌鶴",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-ryokaku/"
+        },
+        {
+          "name": "一龍齋貞橘",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teikitsu/"
+        },
+        {
+          "name": "宝井一凜",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-ichirin/"
+        },
+        {
+          "name": "田ノ中星之助",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanonaka-hoshinosuke/"
+        },
+        {
+          "name": "神田春陽",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-shunyo/"
+        },
+        {
+          "name": "田辺鶴遊",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-kakuyu/"
+        },
+        {
+          "name": "神田あおい",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-aoi/"
+        },
+        {
+          "name": "一龍齋貞寿",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teiju/"
+        },
+        {
+          "name": "神田山緑",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-sanryoku/"
+        },
+        {
+          "name": "田辺一乃",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-kazuno/"
+        },
+        {
+          "name": "宝井琴鶴",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-kinkaku/"
+        },
+        {
+          "name": "神田董花",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-sumika/"
+        },
+        {
+          "name": "田辺銀冶",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/tanabe-ginya/"
+        },
+        {
+          "name": "一龍齋貞弥",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teiya/"
+        },
+        {
+          "name": "一龍齋貞鏡",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/ichiryusai-teikyo/"
+        },
+        {
+          "name": "宝井琴凌",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/takarai-umeyu/"
+        },
+        {
+          "name": "神田こなぎ",
+          "rank": "真打",
+          "url": "https://kodankyokai.jp/kanda-konagi/"
+        },
+        {
+          "name": "田辺いちか",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/tanabe-ichika/"
+        },
+        {
+          "name": "田辺凌天",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/tanabe-ryoten/"
+        },
+        {
+          "name": "一龍斎貞奈",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/ichiryusai-teina/"
+        },
+        {
+          "name": "神田伊織",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/kanda-iori/"
+        },
+        {
+          "name": "田辺一記",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/tanabe-kazuki/"
+        },
+        {
+          "name": "一龍斎貞司",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/ichiryusai-teiji/"
+        },
+        {
+          "name": "宝井小琴",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/takarai-kokin/"
+        },
+        {
+          "name": "神田おりびあ",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/kanda-oribia/"
+        },
+        {
+          "name": "宝井優星",
+          "rank": "二ツ目",
+          "url": "https://kodankyokai.jp/takarai-yuusei/"
+        },
+        {
+          "name": "神田ようかん",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/kanda-youkan/"
+        },
+        {
+          "name": "神田蓮陽",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/kanda-renyou/"
+        },
+        {
+          "name": "田辺凌々",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/tanabe-ryouryou/"
+        },
+        {
+          "name": "宝井琴人",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/takarai-kinto/"
+        },
+        {
+          "name": "一龍斎貞昌",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/itiryuusai-teishou/"
+        },
+        {
+          "name": "神田山兎",
+          "rank": "前座",
+          "url": "https://kodankyokai.jp/kanda-santo/"
+        }
+      ]
+    },
+    {
+      "name": "日本講談協会",
+      "url": "https://www.n-kodan.com/",
+      "members": [
+        {
+          "name": "神田松鯉",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/shouri/"
+        },
+        {
+          "name": "神田愛山",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/aizan/"
+        },
+        {
+          "name": "神田陽子",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/yoko/"
+        },
+        {
+          "name": "神田紫",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/murasaki/"
+        },
+        {
+          "name": "神田紅",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/kurenai/"
+        },
+        {
+          "name": "神田茜",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/akane/"
+        },
+        {
+          "name": "神田昌味",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/masami/"
+        },
+        {
+          "name": "神田山陽",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/sanyou/"
+        },
+        {
+          "name": "神田鯉風",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/rifu/"
+        },
+        {
+          "name": "神田山吹",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/yamabuki/"
+        },
+        {
+          "name": "神田阿久鯉",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/aguri/"
+        },
+        {
+          "name": "神田京子",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/kyoko/"
+        },
+        {
+          "name": "神田鯉栄",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/riei/"
+        },
+        {
+          "name": "神田蘭",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/ran/"
+        },
+        {
+          "name": "神田伯山",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/hakuzan/"
+        },
+        {
+          "name": "松林伯知",
+          "rank": "真打",
+          "url": "https://www.n-kodan.com/member/hakuchi/"
+        },
+        {
+          "name": "神田紅佳",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/benika/"
+        },
+        {
+          "name": "神田紅純",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/koujyun/"
+        },
+        {
+          "name": "神田桜子",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/sakurako/"
+        },
+        {
+          "name": "神田松麻呂",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/matsumaro/"
+        },
+        {
+          "name": "神田陽乃丸",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/hinomaru/"
+        },
+        {
+          "name": "神田鯉花",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/rika/"
+        },
+        {
+          "name": "神田紅希",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/kouki/"
+        },
+        {
+          "name": "神田梅之丞",
+          "rank": "二ツ目",
+          "url": "https://www.n-kodan.com/member/ume/"
+        },
+        {
+          "name": "神田青之丞",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/ao/"
+        },
+        {
+          "name": "神田若之丞",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/waka/"
+        },
+        {
+          "name": "神田松樹",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/matsuki/"
+        },
+        {
+          "name": "神田紫天",
+          "rank": "前座",
+          "url": "https://www.n-kodan.com/member/shiten/"
+        }
+      ]
+    },
+    {
+      "name": "上方講談協会",
+      "url": "https://www.kamigata-kodan.jp/",
+      "members": [
+        {
+          "name": "旭堂南左衛門",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanzaemon"
+        },
+        {
+          "name": "旭堂南舟",
+          "url": "https://kamigata-kodan.jp/index.php/member/nansyu"
+        },
+        {
+          "name": "旭堂南斗",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanto"
+        },
+        {
+          "name": "旭堂南鷹",
+          "url": "https://kamigata-kodan.jp/index.php/member/nano"
+        },
+        {
+          "name": "旭堂南歌",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanka"
+        },
+        {
+          "name": "旭堂南亰",
+          "url": "https://kamigata-kodan.jp/index.php/member/nankyo"
+        },
+        {
+          "name": "旭堂南文字",
+          "url": "https://kamigata-kodan.jp/index.php/member/namonji"
+        },
+        {
+          "name": "旭堂南扇",
+          "url": "https://kamigata-kodan.jp/index.php/member/nansen"
+        },
+        {
+          "name": "旭堂南門",
+          "url": "https://kamigata-kodan.jp/index.php/member/namon"
+        },
+        {
+          "name": "旭堂南山",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanzan"
+        },
+        {
+          "name": "旭堂南之助",
+          "url": "https://kamigata-kodan.jp/index.php/member/nannosuke"
+        },
+        {
+          "name": "旭堂南生",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanshou"
+        },
+        {
+          "name": "旭堂南月",
+          "url": "https://kamigata-kodan.jp/index.php/member/nangetsu"
+        },
+        {
+          "name": "旭堂南楽",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanraku"
+        },
+        {
+          "name": "旭堂南雲",
+          "url": "https://kamigata-kodan.jp/index.php/member/nagumo"
+        },
+        {
+          "name": "旭堂南歩",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanpo"
+        },
+        {
+          "name": "旭堂南丸",
+          "url": "https://kamigata-kodan.jp/index.php/member/nanpo"
+        },
+        {
+          "name": "旭堂南不二",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/minamihuji"
+        },
+        {
+          "name": "旭堂南星",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/nansei"
+        },
+        {
+          "name": "旭堂南隼",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/nanshun"
+        },
+        {
+          "name": "旭堂南士",
+          "url": "https://www.kamigata-kodan.jp/index.php/member/nanshi"
+        }
+      ]
+    },
+    {
+      "name": "大阪講談協会",
+      "url": "https://www.osaka-kodankyoukai.com/",
+      "members": [
+        {
+          "name": "旭堂南慶",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nankei"
+        },
+        {
+          "name": "旭堂みなみ",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#minami"
+        },
+        {
+          "name": "旭堂南照",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanshou"
+        },
+        {
+          "name": "旭堂南桜",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanou"
+        },
+        {
+          "name": "旭堂南鈴",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanrei"
+        },
+        {
+          "name": "旭堂南遊",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanyu"
+        },
+        {
+          "name": "旭堂南明",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanmei"
+        },
+        {
+          "name": "旭堂南風",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanpu"
+        },
+        {
+          "name": "旭堂南璃",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanri"
+        },
+        {
+          "name": "旭堂南和",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#nanwa"
+        },
+        {
+          "name": "旭堂みふく",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/#mifuku"
+        },
+        {
+          "name": "旭堂南千王",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/"
+        },
+        {
+          "name": "旭堂南高梅",
+          "url": "https://www.osaka-kodankyoukai.com/南陵一門/"
+        }
+      ]
+    },
+    {
+      "name": "なみはや講談協会",
+      "url": "https://namihaya-kodan.com/",
+      "members": [
+        {
+          "name": "旭堂南鱗",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂南華",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂南海",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂南湖",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂鱗林",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂一海",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        },
+        {
+          "name": "旭堂左燕",
+          "url": "https://namihaya-kodan.com/協会員（講釈師）紹介/"
+        }
+      ]
+    },
+    {
+      "name": "無所属",
+      "members": [
+        {
+          "name": "悟道軒圓玉",
+          "url": "https://ja.wikipedia.org/wiki/悟道軒圓玉",
+          "description": "二代目。1980年の講談協会再統一に不参加、以降フリー"
+        },
+        {
+          "name": "神田昇龍",
+          "url": "https://ja.wikipedia.org/wiki/神田昇龍",
+          "description": "東京・伯龍一門"
+        },
+        {
+          "name": "日向ひまわり",
+          "url": "https://ja.wikipedia.org/wiki/日向ひまわり",
+          "description": "東京・山陽一門出身"
+        },
+        {
+          "name": "玉田玉秀斎",
+          "url": "https://ja.wikipedia.org/wiki/玉田玉秀斎",
+          "description": "四代目。2021年に大阪講談協会を退会しフリー（旧名・旭堂南陽）"
+        }
+      ]
+    }
+  ]
+}

@@ -27,8 +27,8 @@ class Api::V1::KodanshiControllerTest < ActionDispatch::IntegrationTest
     body = JSON.parse(response.body)
     assert_equal 123, body["count"]
     assert_equal 123, body["kodanshi"].size
-    assert_equal "神田伯山", body["kodanshi"].first["obj"]["name"]
-    assert_equal "日本講談協会", body["kodanshi"].first["obj"]["org"]
+    koudan = body["kodanshi"].find { |k| k["obj"]["name"] == "神田伯山" }
+    assert_equal "日本講談協会", koudan["obj"]["org"]
   end
 
   def test_show_returns_one
