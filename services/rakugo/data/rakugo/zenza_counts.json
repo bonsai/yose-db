@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "generated_at": "2026-09-16T02:09:16Z",
+    "retention": 0.75,
+    "practice_term_years": 3,
+    "method": "roster(0) + proxy"
+  },
+  "by_year": [
+    {
+      "year": 2026,
+      "counts": {
+        "上方落語協会": {
+          "year": 2026,
+          "count": 0,
+          "source": "no-data"
+        },
+        "落語協会": {
+          "year": 2026,
+          "count": 0,
+          "source": "no-data"
+        },
+        "落語立川流": {
+          "year": 2026,
+          "count": 0,
+          "source": "no-data"
+        },
+        "落語芸術協会": {
+          "year": 2026,
+          "count": 0,
+          "source": "no-data"
+        }
+      }
+    }
+  ]
+}
