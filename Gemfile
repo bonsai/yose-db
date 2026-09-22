@@ -7,7 +7,7 @@ gem "alba"
 
 # json 3.x は JSON.parse をキーワード専用に変更。ActionDispatch のリクエストボディ
 # パースと ActiveSupport::JSON.decode が位置引数で呼ぶため、2.x に固定する。
-gem "json", "~> 2.7"
+gem "json", "~> 3.0"
 
 # minitest 6 は minitest/mock(Object#stub) が削除されたため 5.x に固定
 gem "minitest", "~> 5.25", group: :test
