@@ -10,7 +10,7 @@ gem "alba"
 gem "json", "~> 2.7"
 
 # minitest 6 は minitest/mock(Object#stub) が削除されたため 5.x に固定
-gem "minitest", "~> 5.25", group: :test
+gem "minitest", "~> 6.0", group: :test
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
