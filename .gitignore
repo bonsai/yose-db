@@ -37,3 +37,6 @@
 # Local deployment scratch files
 /.deploy/
 
+# gh aw runtime logs
+/.github/aw/logs/
+
